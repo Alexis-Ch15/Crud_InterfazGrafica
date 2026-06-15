@@ -22,19 +22,12 @@ Sistema de escritorio robusto y modular diseñado para la gestión de productos 
 
 ## Estructura del Proyecto
 ```text
-CrudInterfaz/
-├── .idea/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── org/example/crudinterfaz/
-│   │   │       ├── Main.java
-│   │   │       ├── AdministradorController.java
-│   │   │       ├── ProductosController.java
-│   │   │       └── Producto.java
-│   │   └── resources/
-│   │       └── org/example/crudinterfaz/
-│   │           ├── administrador.fxml
-│   │           └── productos.fxml
-├── target/                # (Ignorar: archivos compilados)
-└── pom.xml                # (Archivo de configuración de Maven)
+src/main/java/org/example/crudinterfaz/
+├── AdministradorController.java # Control de navegación principal
+├── AvanceApplication.java            # Punto de entrada
+├── Launcher.java
+├── ProductosController.java     # Lógica CRUD de productos
+└── Producto.java            # Modelo de datos
+src/main/resources/org/example/crudinterfaz/
+├── administrador.fxml       # Layout del Dashboard
+└── productos.fxml           # Formulario y tabla de productos
