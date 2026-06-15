@@ -31,3 +31,9 @@ src/main/java/org/example/crudinterfaz/
 src/main/resources/org/example/crudinterfaz/
 ├── administrador.fxml       # Layout del Dashboard
 └── productos.fxml           # Formulario y tabla de productos
+´´´
+## Instrucciones de Ejecución
+* **Requisitos: Tener instalado JDK 17 o superior y el IDE IntelliJ IDEA.
+* **Clonar: git clone https://github.com/Alexis-Ch15/Crud_InterfazGrafica 
+* **Maven: Esperar a que el proyecto sincronice las dependencias de JavaFX desde el pom.xml.
+* **Ejecutar: Ejecutar la clase AvanceApplication.java y el sistema iniciará automáticamente.
