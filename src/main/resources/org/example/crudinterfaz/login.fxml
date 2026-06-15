@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="327.0" spacing="10.0" style="-fx-background-color: #C3C3FA;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.crudinterfaz.LoginController">
+    <children>
+      <HBox prefHeight="68.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="67.0" prefWidth="320.0" text="Sistema de Ventas">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+               <graphic>
+                  <Label prefHeight="39.0" prefWidth="131.0" text="Mi tienda" textAlignment="CENTER">
+                     <font>
+                        <Font name="Baskerville Old Face" size="26.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <Label prefHeight="19.0" prefWidth="105.0" text="Iniciar Sesion">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label text="Usuario" />
+      <TextField fx:id="txtUsuario" promptText="Ejem: admin" />
+      <Label text="Contraseña" />
+      <TextField fx:id="txtClave" promptText="*******" />
+      <Label text="Rol" />
+      <ComboBox fx:id="roles" editable="true" prefWidth="150.0" promptText="Seleccionar" />
+      <Label fx:id="lblMensaje" />
+      <Button mnemonicParsing="false" onAction="#btnNuevo" text="Ingresar" />
+   </children>
+</VBox>

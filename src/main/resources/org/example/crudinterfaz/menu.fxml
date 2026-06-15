@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="contenedorPrincipal" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.crudinterfaz.AdministradorController">
+
+   <left>
+      <VBox prefWidth="200.0" spacing="10.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+         <Label maxWidth="1.7976931348623157E308" style="-fx-text-fill: white; -fx-font-size: 20px; -fx-padding: 20px;" text="Mi Tienda" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Inicio" />
+         <Button maxWidth="1.7976931348623157E308" onAction="#btnProductos" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Productos" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Categoria" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Clientes" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Ventas" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Reportes" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Usuarios" />
+         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Cerrar Sesión" />
+      </VBox>
+   </left>
+</BorderPane>

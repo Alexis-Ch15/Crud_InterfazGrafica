@@ -1,0 +1,19 @@
+package org.example.crudinterfaz;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class AvanceApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AvanceApplication.class.getResource("/org/example/crudinterfaz/login.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 380);
+        stage.setTitle("Mi tienda");
+        stage.setScene(scene);
+        stage.show();
+    }
+}
