@@ -1,39 +1,46 @@
-# Sistema de Gestión de Inventario - CRUD JavaFX
+# Consumo de APIs RESTful
 
-## Descripción
-Sistema de escritorio robusto y modular diseñado para la gestión de productos de inventario. El sistema permite administrar productos mediante una interfaz gráfica intuitiva, garantizando la integridad de los datos y una navegación fluida entre secciones.
+Este proyecto consiste en una página web estática desarrollada para consumir y desplegar información de diversas APIs públicas mediante la arquitectura **REST**. Los datos se reciben en formato **JSON** y se presentan de forma dinámica en la interfaz principal (`index.html`).
 
-## Captura del Dashboard
-![Dashboard del Sistema](ImagenesJava/CrudProductos.png)
+🚀 **Demo en línea:** [Practica2_APIs en GitHub Pages](https://leodefaz367.github.io/Practica2_APIs/)
 
-## Tecnologías Utilizadas
-* **Lenguaje:** Java 17+
-* **Interfaz Gráfica:** JavaFX 21
-* **Gestión de dependencias:** Apache Maven
-* **Patrón de diseño:** MVC (Modelo-Vista-Controlador)
-* **Herramienta de UI:** Scene Builder
+---
 
-## Funcionalidades
-* **CRUD Completo:** Creación, lectura, actualización y eliminación de productos.
-* **Validaciones:** Control de duplicidad mediante código, validación de tipos numéricos y campos obligatorios.
-* **Búsqueda Inteligente:** Filtro en tiempo real para localizar productos rápidamente.
-* **Arquitectura Escalable:** Carga dinámica de vistas FXML dentro de un contenedor central (`BorderPane`).
-* **Tabla Dinámica:** `TableView` enlazada a `ObservableList` para actualización automática de la interfaz.
+## 👥 Integrantes
 
-## Estructura del Proyecto
-```text
-src/main/java/org/example/crudinterfaz/
-├── AdministradorController.java # Control de navegación principal
-├── AvanceApplication.java            # Punto de entrada
-├── Launcher.java
-├── ProductosController.java     # Lógica CRUD de productos
-└── Producto.java            # Modelo de datos
-src/main/resources/org/example/crudinterfaz/
-├── administrador.fxml       # Layout del Dashboard
-└── productos.fxml           # Formulario y tabla de productos
-```
-## Instrucciones de Ejecución
-* **Requisitos:** Tener instalado JDK 17 o superior y el IDE IntelliJ IDEA.
-* **Clonar:** git clone https://github.com/Alexis-Ch15/Crud_InterfazGrafica 
-* **Maven:** Esperar a que el proyecto sincronice las dependencias de JavaFX desde el pom.xml.
-* **Ejecutar:** Ejecutar la clase AvanceApplication.java y el sistema iniciará automáticamente.
+- **Alexis Chasi**
+- **Leonardo Defaz**
+- **Anderson Estrada**
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5**: Estructura de la página web.
+- **CSS3 / JavaScript**: Estilizado y manipulación del DOM.
+- **Fetch API (Promises / Async-Await)**: Peticiones HTTP asíncronas para el consumo de servicios REST.
+
+---
+
+## ⚙️ Método de Petición HTTP
+
+Para realizar las peticiones a las APIs se empleó la sintaxis `async/await` junto con la **Fetch API**, lo que permite manejar promesas de forma limpia y controlar posibles errores en la conexión:
+
+```javascript
+async function llamado() {
+    try {
+        const url = "[https://api.ejemplo.com/datos](https://api.ejemplo.com/datos)";
+        const request = await fetch(url);
+        
+        if (!request.ok) {
+            throw new Error(`Error HTTP! Estado: ${request.status}`);
+        }
+        
+        const data = await request.json();
+        // Procesamiento e inserción de datos en el DOM
+    } catch (error) {
+        console.error("Error durante la conexión:", error);
+    }
+}
+
+llamado();
